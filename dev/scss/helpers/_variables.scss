@@ -1,0 +1,32 @@
+/* =============
+    Variables
+============= */
+
+// Define the breakpoints
+// Small tablets and large smartphones
+$screen-sm-min: 576px;
+
+// Small tablets
+$screen-md-min: 768px;
+
+// Large tablets and small desktops
+$screen-lg-min: 1024px;
+
+// Large desktops
+$screen-xl-min: 1440px;
+
+
+// Colors vars
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --TealDark: #04555E;
+  --TealLight: #B6D6DA;
+  --TealBase: #EFF9FA;
+  --Charcoal: #14110F;
+  --Ice: #F2F2F3;
+  --Yellow: #E9CC77;
+  --Tan: #F1E9D9;
+  --TealDarkDouble: #2D3437;
+}
+
