@@ -1,0 +1,53 @@
+/* =============
+    DO NOT INLCUDE IN CSS FILE
+============= */
+
+// Display Grid
+div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 16px;
+    row-gap: 16px;
+
+    grid-template-areas: 
+    "name1 name2 name3
+     name1 name2 name 3";
+
+}
+
+// Display Flex
+div{
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// Background image
+div{
+    background-image: url("../example/img/path.img");
+    background-size: cover;
+    background-position: center;
+
+}
+
+// Border box
+div{
+    box-sizing: border-box;
+}
+
+//Color variables
+div{
+    color: var(--white);
+}
+
+//Media queries
+@include md{
+// (md, lg, xl, xxl)
+}
+
+//Screen size variables
+    // $screen-xxl-min
+    // $screen-xl-min

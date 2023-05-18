@@ -2,5 +2,55 @@
     Typography
 ============= */
 
-// font-family: 'Exo 2', sans-serif;
-// font-family: 'Space Grotesk', sans-serif;
+body{
+font-family: 'Exo 2', sans-serif;
+}
+
+h1{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: rem-calc(48);
+    line-height: rem-calc(51);
+}
+
+h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: rem-calc(32);
+    line-height: rem-calc(36);
+}
+
+h3{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: rem-calc(24);
+    line-height: rem-calc(30);
+}
+
+h4{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: rem-calc(16);
+    line-height: rem-calc(20);
+    text-transform: uppercase;
+}
+
+.secondary-text{
+    font-weight: 300;
+    font-size: rem-calc(16);
+    line-height: rem-calc(20);
+}
+
+button, a{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    font-size: rem-calc(16);
+    line-height: rem-calc(20);
+}
+
+button .medium{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: rem-calc(16);
+    line-height: rem-calc(20);
+}
