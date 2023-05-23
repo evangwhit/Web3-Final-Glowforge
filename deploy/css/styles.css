@@ -11,8 +11,9 @@ html {
     Variables
 ============= */
 :root {
-  --black: #000000;
-  --white: #ffffff;
+  --Black: #000000;
+  --White: #ffffff;
+  --Grey: #999999;
   --TealDark: #04555E;
   --TealLight: #B6D6DA;
   --TealBase: #EFF9FA;
@@ -399,6 +400,14 @@ button .medium, .button-medium {
 ============= */
 a {
   padding: 10px 48px;
+  white-space: nowrap;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
 }
 
 .teal-button:link, .teal-button:visited {
@@ -517,19 +526,103 @@ button .medium, .button-medium {
 /* =============
     Nav (previously header)
 ============= */
+.show-menu {
+  display: flex !important;
+}
+
 #nav {
+  position: fixed;
+  height: 56px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 16px;
+  background-color: var(--White);
+  border-bottom: 1px solid var(--Grey);
+  box-shadow: 0px 4px 38px rgba(0, 0, 0, 0.15);
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: auto 0px;
+  grid-template-areas: "logo burger" "nav nav";
+}
+#nav #nav-logo {
+  grid-area: logo;
   display: flex;
   align-items: center;
-  padding: 16px;
+}
+#nav #burger-container {
+  grid-area: burger;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#nav #main-menu {
+  height: calc(100vh - 56px);
+  grid-area: nav;
+  display: none;
+  justify-content: flex-end;
+  background-color: rgba(20, 17, 15, 0.45);
+  margin: 0px -16px;
+}
+#nav #main-menu .nav-buttons {
+  width: 65%;
+  height: 100%;
+  padding: 45px 0 112px 0;
+  box-sizing: border-box;
+  background-color: var(--Ice);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav #main-menu .nav-buttons div {
+  width: 100%;
+  padding: 0 56px 0 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+#nav #main-menu .nav-buttons div a {
+  padding: 0px;
+  margin-top: 24px;
   color: var(--Charcoal);
 }
-#nav .nav-buttons a {
-  margin-left: 68px;
-  padding: 0;
-  color: var(--Charcoal);
-}
-#nav aside {
-  margin-left: auto;
+@media (min-width: 1024px) {
+  #nav {
+    height: 76px;
+    padding: 0px 16px;
+    display: flex;
+  }
+  #nav #burger-btn {
+    display: none;
+  }
+  #nav #main-menu {
+    background-color: transparent;
+    height: auto;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+  }
+  #nav #main-menu .nav-buttons {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-left: 68px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #nav #main-menu .nav-buttons div {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: auto;
+  }
+  #nav #main-menu .nav-buttons div a {
+    padding: 0px;
+    margin: 0 68px 0 0;
+  }
 }
 
 /* =============
