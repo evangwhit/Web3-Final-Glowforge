@@ -1,3 +1,54 @@
 /* =============
     Buttons
 ============= */
+a{
+    padding: 10px 48px;
+}
+
+.teal-button:link, .teal-button:visited{
+    color: var(--Ice);
+    background-color: var(--TealDark);
+
+    &:hover, &:active{
+        opacity: 50%;
+    }
+}
+
+.yellow-button:link, .yellow-button:visited{
+    color: var(--Charcoal);
+    background-color: var(--Yellow);
+
+    &:hover, &:active{
+        opacity: 70%;
+    }
+}
+
+.text-button:link, .text-button:visited{
+    color: var(--TealDark);
+    background-color: transparent;
+
+    &:hover, &:active{
+        text-decoration: underline;
+    }
+}
+
+.outline-button:link, .outline-button:visited{
+    color: var(--Charcoal);
+    background-color: transparent;
+    border: 2px solid var(--TealDark);
+
+    &:hover, &:active{
+        background-color: var(--TealLight);
+    }
+}
+
+
+// Unused ------
+
+// .greytext-button{
+
+// }
+
+// .mobileArrow-button{
+
+// }

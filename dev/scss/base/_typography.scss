@@ -6,28 +6,28 @@ body{
 font-family: 'Exo 2', sans-serif;
 }
 
-h1{
+h1, .h1{
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     font-size: rem-calc(48);
     line-height: rem-calc(51);
 }
 
-h2{
+h2, .h2{
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 600;
     font-size: rem-calc(32);
     line-height: rem-calc(36);
 }
 
-h3{
+h3, .h3{
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 500;
     font-size: rem-calc(24);
     line-height: rem-calc(30);
 }
 
-h4{
+h4, .h4{
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     font-size: rem-calc(16);
@@ -41,16 +41,20 @@ h4{
     line-height: rem-calc(20);
 }
 
-button, a{
+button, a, .button, .link{
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 300;
     font-size: rem-calc(16);
     line-height: rem-calc(20);
+    text-decoration: none;
+    color: inherit;
+
 }
 
-button .medium{
+button .medium, .button-medium{
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 500;
     font-size: rem-calc(16);
     line-height: rem-calc(20);
+    color: inherit;
 }

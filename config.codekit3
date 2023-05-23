@@ -19,6 +19,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Assets\/Logoimage.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/Logoimage.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/checkout.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -88,7 +98,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/footer.html",
       "oF" : 0
     },

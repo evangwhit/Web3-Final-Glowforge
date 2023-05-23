@@ -1,3 +1,119 @@
 /* =============
     Footer
 ============= */
+// div{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: auto auto;
+//     column-gap: 16px;
+//     row-gap: 16px;
+
+//     grid-template-areas: 
+//     "name1 name2 name3
+//      name1 name2 name3";
+
+// }
+
+#footer{
+    
+// General styling ------------
+    background-color: var(--TealDarkDouble);
+    color: var(--Ice);
+
+    div{
+        display: flex;
+        flex-direction: column;    
+        white-space: nowrap;
+
+        p, a{
+            margin: 0;
+            margin-bottom: 24px;
+            padding: 0;
+        }
+        
+    }
+
+    a{
+        color: var(--Ice);
+    }
+
+    .button-medium{
+        color: var(--TealLight);
+    }
+//-----------------
+
+
+// Layout ---------
+    padding: 88px 40px 0px;
+    display: grid;
+    grid-template-columns: auto 50%;
+    row-gap: 86px;
+    grid-template-areas: 
+    "logo socials"
+    "product socials"
+    "company socials"
+    "contact-us socials"; 
+    
+    .logo{
+        grid-area:logo;
+        align-items: flex-start;
+    }
+
+    .product{
+        grid-area: product;
+    }
+
+    .company{
+        grid-area: company;
+    }
+
+    .contact-us{
+        grid-area: contact-us;
+        margin-bottom: 150px;
+    }
+
+    .socials{
+        grid-area: socials;
+        align-items: flex-end;
+        
+        a{
+            margin: 0;
+            margin-bottom: 18px;
+        }
+
+        p{
+            margin-top: auto;
+            
+        }
+    }
+
+    @include md{
+        grid-template-columns: auto auto auto;    
+        column-gap: 86px;
+        grid-template-areas: 
+        "logo product company"
+        "logo contact-us socials";
+        
+        .socials{
+            align-items: flex-start;
+        }
+    }
+
+    @include lg{
+        grid-template-columns: auto auto auto auto 4fr;    
+        column-gap: 86px;
+        grid-template-areas: "logo product company contact-us socials";
+
+        .socials{
+            align-items: flex-end;
+        }
+
+        .product{
+            margin-bottom: 60px;
+        }
+
+    }
+    
+    
+
+}
