@@ -3,6 +3,16 @@
 ============= */
 a{
     padding: 10px 48px;
+    white-space: nowrap;
+
+}
+
+button{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+
 }
 
 .teal-button:link, .teal-button:visited{
