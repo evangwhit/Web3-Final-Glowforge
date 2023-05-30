@@ -22,6 +22,12 @@ html {
   --Yellow: #E9CC77;
   --Tan: #F1E9D9;
   --TealDarkDouble: #2D3437;
+  --navoffset: 57px;
+}
+@media (min-width: 1024px) {
+  :root {
+    --navoffset: 72px;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -534,6 +540,7 @@ button .medium, .button-medium {
   position: fixed;
   height: 56px;
   width: 100%;
+  top: 0;
   box-sizing: border-box;
   padding: 0 16px;
   background-color: var(--White);
@@ -623,6 +630,40 @@ button .medium, .button-medium {
   #nav #main-menu .nav-buttons div a {
     padding: 0px;
     margin: 0 68px 0 0;
+  }
+}
+
+/* =============
+    Thank you
+============= */
+#thankyou {
+  padding: 0 155px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#thankyou .ty-img {
+  height: 800px;
+  overflow: hidden;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+}
+#thankyou .ty-img img {
+  width: 100%;
+}
+#thankyou .ty-content {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #thankyou .ty-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    margin-bottom: 125px;
+  }
+  #thankyou .ty-content a, #thankyou .ty-content p:first-of-type {
+    justify-self: end;
   }
 }
 

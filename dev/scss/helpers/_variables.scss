@@ -29,5 +29,11 @@ $screen-xl-min: 1440px;
   --Yellow: #E9CC77;
   --Tan: #F1E9D9;
   --TealDarkDouble: #2D3437;
+
+  --navoffset: 57px;
+
+  @include lg{
+    --navoffset: 72px;
+  }
 }
 

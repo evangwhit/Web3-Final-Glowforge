@@ -9,11 +9,11 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
-    "\/Assets\/Glowforge logo.svg" : {
+    "\/Assets\/Glowforge-logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/Assets\/Glowforge logo.svg",
+      "oAP" : "\/Assets\/Glowforge-logo.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -28,6 +28,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/Assets\/thankyou-glowforge.png" : {
+      "ft" : 32768,
+      "iS" : 277868,
+      "oA" : 0,
+      "oAP" : "\/Assets\/thankyou-glowforge.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/deploy\/checkout.html" : {
       "cB" : 0,
@@ -93,6 +106,14 @@
       "oA" : 0,
       "oAP" : "\/deploy\/checkout.html",
       "oF" : 2
+    },
+    "\/dev\/content\/thankyou\/thankyousection.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/thankyou\/thankyousection.html",
+      "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -316,6 +337,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/layout\/_nav.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/thankyou\/thankyou.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/thankyou\/thankyou.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
