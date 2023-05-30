@@ -608,6 +608,7 @@ button .medium, .button-medium {
     height: auto;
     padding: 0;
     margin-left: 68px;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
