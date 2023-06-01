@@ -1047,7 +1047,7 @@ button .medium, .button-medium {
   column-gap: 16px;
   row-gap: 0;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: auto auto;
   grid-template-areas: "label date" "label2 date2";
 }
 #shipping form .radio-button label[for=standard] {
