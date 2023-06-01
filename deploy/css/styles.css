@@ -962,8 +962,18 @@ button .medium, .button-medium {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  margin-top: 96px;
-  height: 95vh;
+  margin-top: calc(var(--navoffset) + 8px);
+  height: 92vh;
+}
+@media (min-width: 1024px) {
+  #shipping {
+    margin-top: var(--navoffset);
+    width: 50%;
+    height: 800px;
+    padding: 0;
+    justify-content: space-between;
+    margin-left: 90px;
+  }
 }
 #shipping form {
   padding: 32px;
@@ -972,6 +982,9 @@ button .medium, .button-medium {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+#shipping form h2 {
+  margin-top: 8px;
 }
 #shipping form input {
   width: 100%;

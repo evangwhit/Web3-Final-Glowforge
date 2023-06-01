@@ -4,8 +4,19 @@
     display: flex;
     flex-direction: column;
     padding: 16px;
-    margin-top: 96px;
-    height: 95vh;
+    margin-top: calc(var(--navoffset) + 8px) ;
+    height: 92vh;
+
+    @include lg{
+        margin-top: var(--navoffset);
+        width: 50%;
+        height: 800px;
+        padding: 0;
+        justify-content: space-between;
+        margin-left: 90px;
+
+    }
+
 
     form{
         padding: 32px;
@@ -14,6 +25,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        h2{
+            margin-top: 8px;
+        }
         
         input{
             width: 100%;
@@ -68,10 +83,12 @@
             flex-direction: row;
             align-items: baseline;
             justify-content: space-between;
+            
 
             .radio-container{
                 display: flex;
                 align-items: center;
+                
 
                 .radio-circle{
                     width: 16px;
