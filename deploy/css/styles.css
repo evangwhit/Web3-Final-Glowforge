@@ -815,7 +815,7 @@ button .medium, .button-medium {
   max-width: 1440px;
   margin: 0 auto;
 }
-#checkout1-section #receipt {
+#checkout1-section #shipping {
   display: none;
 }
 @media (min-width: 1024px) {
@@ -824,7 +824,7 @@ button .medium, .button-medium {
     flex-direction: row;
     padding: 72px 155px 78px;
   }
-  #checkout1-section #receipt {
+  #checkout1-section #shipping {
     display: inline-block;
   }
 }
@@ -1045,4 +1045,5 @@ button .medium, .button-medium {
 }
 #shipping .teal-button {
   margin-top: 36px;
+  width: 100%;
 }
