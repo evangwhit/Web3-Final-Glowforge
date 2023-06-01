@@ -1,5 +1,6 @@
 #receipt{
     margin-top: var(--navoffset);
+    position: relative;
     padding: 16px;
     padding-bottom: 96px;
     height: calc(90vh - var(--navoffset));
@@ -10,8 +11,8 @@
 
     @include lg{
         padding: 48px 64px 32px 64px;
-        height: 800px;
         width: 50%;
+        height: auto;
         border: 1px solid var(--Black);
         box-sizing: border-box;
     }
@@ -152,5 +153,11 @@
 
         background-color: var(--TealDark);
         color: var(--Ice);
+
+        @include lg{
+            display: none;
+        }
+
+
     }
 }

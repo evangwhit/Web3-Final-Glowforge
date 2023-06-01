@@ -1,18 +1,35 @@
-#checkout1-section{
-    max-width: 1440px;
-    margin: 0 auto;
+#checkout1-section-full{
+height: 100vh;
 
-    #shipping{
-        display: none;
-    }
+    #checkout1-section{
+        max-width: 1440px;
+        max-height: 1100px;
+        margin: auto;
+        height: 100vh;
+        box-sizing: border-box;
 
-    @include lg{
-        display: flex;
-        flex-direction: row;
-        padding: 72px 155px 78px;
-        
         #shipping{
-            display: inline-block;
+            display: none;
         }
+
+        @include lg{
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            padding: 72px 155px 78px;
+            
+            #shipping{
+                display: inline;
+            }
+        }
+    }
+}
+
+
+
+
+#checkout2-section{
+    #shipping{
+        display: inline-block;
     }
 }

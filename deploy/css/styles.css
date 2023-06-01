@@ -580,6 +580,7 @@ button .medium, .button-medium {
   width: 100%;
   top: 0;
   box-sizing: border-box;
+  z-index: 10000000000;
   padding: 0 16px;
   background-color: var(--White);
   border-bottom: 1px solid var(--Grey);
@@ -811,26 +812,38 @@ button .medium, .button-medium {
   }
 }
 
-#checkout1-section {
-  max-width: 1440px;
-  margin: 0 auto;
+#checkout1-section-full {
+  height: 100vh;
 }
-#checkout1-section #shipping {
+#checkout1-section-full #checkout1-section {
+  max-width: 1440px;
+  max-height: 1100px;
+  margin: auto;
+  height: 100vh;
+  box-sizing: border-box;
+}
+#checkout1-section-full #checkout1-section #shipping {
   display: none;
 }
 @media (min-width: 1024px) {
-  #checkout1-section {
+  #checkout1-section-full #checkout1-section {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     padding: 72px 155px 78px;
   }
-  #checkout1-section #shipping {
-    display: inline-block;
+  #checkout1-section-full #checkout1-section #shipping {
+    display: inline;
   }
+}
+
+#checkout2-section #shipping {
+  display: inline-block;
 }
 
 #receipt {
   margin-top: var(--navoffset);
+  position: relative;
   padding: 16px;
   padding-bottom: 96px;
   height: calc(90vh - var(--navoffset));
@@ -842,8 +855,8 @@ button .medium, .button-medium {
 @media (min-width: 1024px) {
   #receipt {
     padding: 48px 64px 32px 64px;
-    height: 800px;
     width: 50%;
+    height: auto;
     border: 1px solid var(--Black);
     box-sizing: border-box;
   }
@@ -955,6 +968,11 @@ button .medium, .button-medium {
   background-color: var(--TealDark);
   color: var(--Ice);
 }
+@media (min-width: 1024px) {
+  #receipt a {
+    display: none;
+  }
+}
 
 #shipping {
   width: 100%;
@@ -967,21 +985,24 @@ button .medium, .button-medium {
 }
 @media (min-width: 1024px) {
   #shipping {
+    position: relative;
     margin-top: var(--navoffset);
     width: 50%;
-    height: 800px;
+    height: auto;
     padding: 0;
-    justify-content: space-between;
     margin-left: 90px;
   }
 }
 #shipping form {
   padding: 32px;
   border: 1px solid var(--Black);
-  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 75%;
+  /*--------------
+  Radio buttons
+  --------------*/
 }
 #shipping form h2 {
   margin-top: 8px;
@@ -1044,6 +1065,13 @@ button .medium, .button-medium {
   color: var(--TealDark);
 }
 #shipping .teal-button {
-  margin-top: 36px;
+  margin-top: 32px;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  #shipping .teal-button {
+    position: absolute;
+    margin-top: auto;
+    bottom: 0;
+  }
 }

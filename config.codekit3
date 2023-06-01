@@ -63,6 +63,22 @@
       "oAP" : "\/deploy\/checkout1.html",
       "oF" : 0
     },
+    "\/deploy\/checkout2.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout2.html",
+      "oF" : 0
+    },
+    "\/deploy\/checkout3.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout3.html",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,

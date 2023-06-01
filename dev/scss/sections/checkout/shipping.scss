@@ -1,36 +1,35 @@
-#shipping{
+#shipping {
     width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     padding: 16px;
-    margin-top: calc(var(--navoffset) + 8px) ;
+    margin-top: calc(var(--navoffset) + 8px);
     height: 92vh;
 
-    @include lg{
+    @include lg {
+        position: relative;
         margin-top: var(--navoffset);
         width: 50%;
-        height: 800px;
+        height: auto;
         padding: 0;
-        justify-content: space-between;
         margin-left: 90px;
-
     }
 
 
-    form{
+    form {
         padding: 32px;
         border: 1px solid var(--Black);
-        height: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        height: 75%;
 
-        h2{
+        h2 {
             margin-top: 8px;
         }
-        
-        input{
+
+        input {
             width: 100%;
             height: 56px;
             margin-top: 4px;
@@ -38,59 +37,65 @@
             box-sizing: border-box;
 
             border: 1px solid var(--GreyLine);
-            
+
         }
 
-        .input-fields{
+        .input-fields {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: auto auto auto;
             column-gap: 24px;
             row-gap: 16px;
-            grid-template-areas: 
-            "name1 name1 name1 name1 name1 name1"
-            "name2 name2 name2 name3 name3 name3"
-            "name4 name4 name5 name5 name6 name6";
-    
-            .form-item1{
+            grid-template-areas:
+                "name1 name1 name1 name1 name1 name1"
+                "name2 name2 name2 name3 name3 name3"
+                "name4 name4 name5 name5 name6 name6";
+
+            .form-item1 {
                 grid-area: name1;
             }
-            
-            .form-item2{
+
+            .form-item2 {
                 grid-area: name2;
             }
-    
-            .form-item3{
+
+            .form-item3 {
                 grid-area: name3;
             }
-    
-            .form-item4{
-                grid-area:name4;
+
+            .form-item4 {
+                grid-area: name4;
             }
-    
-            .form-item5{
+
+            .form-item5 {
                 grid-area: name5;
             }
-    
-            .form-item6{
+
+            .form-item6 {
                 grid-area: name6;
             }
         }
 
 
-        .radio-button{
+
+        /*--------------
+        Radio buttons
+        --------------*/
+
+        .radio-button {
             display: flex;
             flex-direction: row;
             align-items: baseline;
             justify-content: space-between;
-            
 
-            .radio-container{
+
+
+            .radio-container {
                 display: flex;
                 align-items: center;
-                
 
-                .radio-circle{
+
+                .radio-circle {
                     width: 16px;
                     height: 16px;
                     border: 2px solid var(--Black);
@@ -98,21 +103,27 @@
                     margin-right: 16px;
                 }
 
-                input{
+                input {
                     display: none;
                 }
 
-                span{
+                span {
                     color: var(--TealDark);
                 }
-            } 
+            }
         }
 
 
     }
 
-    .teal-button{
-        margin-top: 36px;
+    .teal-button {
+        margin-top: 32px;
         width: 100%;
+
+        @include lg {
+            position: absolute;
+            margin-top: auto;
+            bottom: 0;
+        }
     }
 }
