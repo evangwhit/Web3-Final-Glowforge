@@ -39,6 +39,7 @@
 
     .ty-content{
         width: 100%;
+        max-width: 1440px;
         display: grid;
         grid-template-columns: auto;
         gap: 8px;
