@@ -352,8 +352,14 @@ body {
 h1, .h1 {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.875rem;
   line-height: 3.1875rem;
+}
+@media (min-width: 768px) {
+  h1, .h1 {
+    font-size: 3rem;
+    line-height: 3.1875rem;
+  }
 }
 
 h2, .h2 {
@@ -480,8 +486,14 @@ body {
 h1, .h1 {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.875rem;
   line-height: 3.1875rem;
+}
+@media (min-width: 768px) {
+  h1, .h1 {
+    font-size: 3rem;
+    line-height: 3.1875rem;
+  }
 }
 
 h2, .h2 {
@@ -637,33 +649,61 @@ button .medium, .button-medium {
     Thank you
 ============= */
 #thankyou {
-  padding: 0 155px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 16px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #thankyou {
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  #thankyou {
+    padding: 0 155px;
+  }
 }
 #thankyou .ty-img {
-  height: 800px;
   overflow: hidden;
-  padding: 0 100px;
   display: flex;
   align-items: center;
 }
 #thankyou .ty-img img {
   width: 100%;
 }
+@media (min-width: 768px) {
+  #thankyou .ty-img {
+    padding: 0 100px;
+    height: 800px;
+  }
+}
 #thankyou .ty-content {
   width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+#thankyou .ty-content a {
+  justify-self: center;
+  text-align: center;
+  margin-top: 16px;
 }
 @media (min-width: 768px) {
   #thankyou .ty-content {
-    display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
     margin-bottom: 125px;
+    gap: 0;
   }
   #thankyou .ty-content a, #thankyou .ty-content p:first-of-type {
     justify-self: end;
+    text-align: right;
+  }
+  #thankyou .ty-content a {
+    margin-top: 0;
   }
 }
 
