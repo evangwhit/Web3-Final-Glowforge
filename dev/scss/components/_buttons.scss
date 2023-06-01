@@ -24,6 +24,13 @@ button{
     }
 }
 
+.teal-button{
+    color: var(--Ice);
+    background-color: var(--TealDark);
+    padding: 10px 48px;
+    white-space: nowrap;
+}
+
 .yellow-button:link, .yellow-button:visited{
     color: var(--Charcoal);
     background-color: var(--Yellow);

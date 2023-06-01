@@ -2,7 +2,17 @@
     max-width: 1440px;
     margin: 0 auto;
 
+    #receipt{
+        display: none;
+    }
+
     @include lg{
+        display: flex;
+        flex-direction: row;
         padding: 72px 155px 78px;
+        
+        #receipt{
+            display: inline-block;
+        }
     }
 }

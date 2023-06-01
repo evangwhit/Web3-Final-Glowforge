@@ -1,0 +1,100 @@
+#shipping{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin-top: 96px;
+    height: 95vh;
+
+    form{
+        padding: 32px;
+        border: 1px solid var(--Black);
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        input{
+            width: 100%;
+            height: 56px;
+            margin-top: 4px;
+            padding-left: 16px;
+            box-sizing: border-box;
+
+            border: 1px solid var(--GreyLine);
+            
+        }
+
+        .input-fields{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: auto auto auto;
+            column-gap: 24px;
+            row-gap: 16px;
+            grid-template-areas: 
+            "name1 name1 name1 name1 name1 name1"
+            "name2 name2 name2 name3 name3 name3"
+            "name4 name4 name5 name5 name6 name6";
+    
+            .form-item1{
+                grid-area: name1;
+            }
+            
+            .form-item2{
+                grid-area: name2;
+            }
+    
+            .form-item3{
+                grid-area: name3;
+            }
+    
+            .form-item4{
+                grid-area:name4;
+            }
+    
+            .form-item5{
+                grid-area: name5;
+            }
+    
+            .form-item6{
+                grid-area: name6;
+            }
+        }
+
+
+        .radio-button{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-between;
+
+            .radio-container{
+                display: flex;
+                align-items: center;
+
+                .radio-circle{
+                    width: 16px;
+                    height: 16px;
+                    border: 2px solid var(--Black);
+                    border-radius: 100%;
+                    margin-right: 16px;
+                }
+
+                input{
+                    display: none;
+                }
+
+                span{
+                    color: var(--TealDark);
+                }
+            } 
+        }
+
+
+    }
+
+    .teal-button{
+        margin-top: 36px;
+    }
+}
