@@ -29,6 +29,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Assets\/Receipt-glowforge.png" : {
+      "ft" : 32768,
+      "iS" : 25004,
+      "oA" : 0,
+      "oAP" : "\/Assets\/Receipt-glowforge.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/Assets\/thankyou-glowforge.png" : {
       "ft" : 32768,
       "iS" : 277868,
@@ -42,12 +55,12 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/checkout.html" : {
+    "\/deploy\/checkout1.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/checkout.html",
+      "oAP" : "\/deploy\/checkout1.html",
       "oF" : 0
     },
     "\/deploy\/css\/styles.css" : {
@@ -99,13 +112,37 @@
       "oAP" : "\/deploy\/thankyou.html",
       "oF" : 0
     },
-    "\/dev\/checkout.kit" : {
+    "\/dev\/checkout1.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/checkout.html",
+      "oAP" : "\/deploy\/checkout1.html",
       "oF" : 2
+    },
+    "\/dev\/checkout2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/checkout2.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/checkout\/reciept.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/checkout\/reciept.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/checkout\/shipping.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/checkout\/shipping.html",
+      "oF" : 0
     },
     "\/dev\/content\/thankyou\/thankyousection.kit" : {
       "cB" : 0,
@@ -337,6 +374,51 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/layout\/_nav.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/checkout\/all-checkout.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/checkout\/all-checkout.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/checkout\/receipt.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/checkout\/receipt.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/checkout\/shipping.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/checkout\/shipping.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

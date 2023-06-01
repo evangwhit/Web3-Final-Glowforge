@@ -14,6 +14,7 @@ html {
   --Black: #000000;
   --White: #ffffff;
   --Grey: #999999;
+  --GreyLine: rgba(0, 0, 0, 0.3);
   --TealDark: #04555E;
   --TealLight: #B6D6DA;
   --TealBase: #EFF9FA;
@@ -342,6 +343,12 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Typography
 ============= */
@@ -388,6 +395,12 @@ h4, .h4 {
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.25rem;
+}
+
+.body-copy {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
 }
 
 button, a, .button, .link {
@@ -524,6 +537,12 @@ h4, .h4 {
   line-height: 1.25rem;
 }
 
+.body-copy {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
 button, a, .button, .link {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 300;
@@ -646,69 +665,6 @@ button .medium, .button-medium {
 }
 
 /* =============
-    Thank you
-============= */
-#thankyou {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 16px;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  #thankyou {
-    text-align: left;
-  }
-}
-@media (min-width: 1024px) {
-  #thankyou {
-    padding: 0 155px;
-  }
-}
-#thankyou .ty-img {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-#thankyou .ty-img img {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  #thankyou .ty-img {
-    padding: 0 100px;
-    height: 800px;
-  }
-}
-#thankyou .ty-content {
-  width: 100%;
-  max-width: 1440px;
-  display: grid;
-  grid-template-columns: auto;
-  gap: 8px;
-  margin-bottom: 32px;
-}
-#thankyou .ty-content a {
-  justify-self: center;
-  text-align: center;
-  margin-top: 16px;
-}
-@media (min-width: 768px) {
-  #thankyou .ty-content {
-    grid-template-columns: 3fr 1fr;
-    align-items: center;
-    margin-bottom: 125px;
-    gap: 0;
-  }
-  #thankyou .ty-content a, #thankyou .ty-content p:first-of-type {
-    justify-self: end;
-    text-align: right;
-  }
-  #thankyou .ty-content a {
-    margin-top: 0;
-  }
-}
-
-/* =============
     Footer
 ============= */
 #footer {
@@ -783,4 +739,204 @@ button .medium, .button-medium {
   #footer .product {
     margin-bottom: 60px;
   }
+}
+
+/* =============
+    Thank you
+============= */
+#thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #thankyou {
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  #thankyou {
+    padding: 0 155px;
+  }
+}
+#thankyou .ty-img {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+#thankyou .ty-img img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #thankyou .ty-img {
+    padding: 0 100px;
+    height: 800px;
+  }
+}
+#thankyou .ty-content {
+  width: 100%;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+#thankyou .ty-content a {
+  justify-self: center;
+  text-align: center;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  #thankyou .ty-content {
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    margin-bottom: 125px;
+    gap: 0;
+  }
+  #thankyou .ty-content a, #thankyou .ty-content p:first-of-type {
+    justify-self: end;
+    text-align: right;
+  }
+  #thankyou .ty-content a {
+    margin-top: 0;
+  }
+}
+
+#checkout1-section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  #checkout1-section {
+    padding: 72px 155px 78px;
+  }
+}
+
+#receipt {
+  margin-top: var(--navoffset);
+  padding: 16px;
+  padding-bottom: 96px;
+  height: calc(90vh - var(--navoffset));
+  min-height: 615px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  #receipt {
+    padding: 48px 64px 32px 64px;
+    height: 800px;
+    width: 50%;
+    border: 1px solid var(--Black);
+    box-sizing: border-box;
+  }
+}
+#receipt .receipt-header .receipt-img {
+  padding: 9px 16px;
+  border: 1px solid var(--Black);
+  width: 163px;
+  display: flex;
+  justify-content: center;
+}
+#receipt .receipt-header .receipt-head-text {
+  border-bottom: 1px solid var(--GreyLine);
+}
+#receipt .receipt-header .receipt-head-text h2 {
+  color: var(--TealDark);
+  margin: 24px 0 8px 0;
+}
+#receipt .receipt-header .receipt-head-text p {
+  margin: 0;
+}
+#receipt .receipt-header .receipt-head-text h3 {
+  margin: 16px 0 24px 0;
+}
+#receipt .prices {
+  padding: 0 0 48px 0;
+}
+#receipt .prices div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title button" "price button";
+  margin: 0 0 16px 0;
+}
+#receipt .prices div p {
+  grid-area: title;
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+#receipt .prices div h3 {
+  grid-area: price;
+  padding: 0;
+  margin: 0;
+}
+#receipt .prices div button {
+  grid-area: button;
+  padding: 0;
+  margin: 0;
+  justify-self: right;
+}
+#receipt .totals ul {
+  border-bottom: 1px solid var(--GreyLine);
+}
+@media (min-width: 1024px) {
+  #receipt .totals ul {
+    width: 70%;
+    margin-left: auto;
+  }
+}
+#receipt .totals ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+#receipt .totals ul li p, #receipt .totals ul li h4 {
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+#receipt .totals .total-delivery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  #receipt .totals .total-delivery {
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+#receipt .totals .total-delivery h2 {
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+#receipt .totals .total-delivery p {
+  margin: 0;
+  padding: 0;
+}
+#receipt .totals .total-delivery p span {
+  color: var(--TealDark);
+}
+#receipt a {
+  position: fixed;
+  bottom: 16px;
+  right: 24px;
+  height: 56px;
+  width: 56px;
+  border-radius: 100%;
+  padding: 0 0 1px 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--TealDark);
+  color: var(--Ice);
 }

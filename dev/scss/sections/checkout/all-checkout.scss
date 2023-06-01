@@ -1,0 +1,8 @@
+#checkout1-section{
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @include lg{
+        padding: 72px 155px 78px;
+    }
+}

@@ -17,7 +17,18 @@
 // Layout Styles
 @import "base/typography";
 @import "layout/_nav";
-@import "sections/thankyou/thankyou.scss";
 @import "layout/_footer";
 
 // Sections Styles
+    //Thank you
+        @import "sections/thankyou/thankyou.scss";
+    
+    //Checkout
+        @import "sections/checkout/all-checkout.scss";
+
+        @import "sections/checkout/receipt.scss";
+        @import "sections/checkout/shipping.scss";
+
+        
+
+

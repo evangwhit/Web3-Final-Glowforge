@@ -46,6 +46,12 @@ h4, .h4{
     line-height: rem-calc(20);
 }
 
+.body-copy{
+    font-weight: 500;
+    font-size: rem-calc(16);
+    line-height: rem-calc(26);
+}
+
 button, a, .button, .link{
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 300;

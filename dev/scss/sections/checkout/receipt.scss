@@ -1,0 +1,158 @@
+#receipt{
+    margin-top: var(--navoffset);
+    padding: 16px;
+    padding-bottom: 96px;
+    height: calc(90vh - var(--navoffset));
+    min-height: 615px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include lg{
+        padding: 48px 64px 32px 64px;
+        height: 800px;
+        width: 50%;
+        border: 1px solid var(--Black);
+        box-sizing: border-box;
+        
+     
+    }
+
+    .receipt-header{
+        .receipt-img{
+            padding: 9px 16px;
+            border: 1px solid var(--Black);
+            width: 163px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .receipt-head-text{
+            border-bottom: 1px solid var(--GreyLine);
+
+            h2{
+                color: var(--TealDark);
+                margin: 24px 0 8px 0;
+            }
+
+            p{
+                margin: 0;
+            }
+
+            h3{
+                margin: 16px 0 24px 0;
+            }
+        }
+    }
+   
+    .prices{
+        padding: 0 0 48px 0;
+        div{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "title button" "price button";
+            margin: 0 0 16px 0;
+
+            p{
+                grid-area: title;
+                padding: 0;
+                margin: 0 0 8px 0;
+            }
+
+            h3{
+                grid-area: price;
+                padding: 0;
+                margin: 0;
+
+            }
+
+            button{
+                grid-area: button;
+                padding: 0;
+                margin: 0;
+                justify-self: right;
+
+            }
+        }
+    }
+
+    .totals{
+
+        
+        ul{
+            border-bottom: 1px solid var(--GreyLine);
+
+            @include lg{
+                width: 70%;
+                margin-left: auto;
+            }
+
+            li{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                margin: 0;
+                padding: 0;
+
+                p, h4{
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                }
+            }
+        }
+
+      
+        
+        .total-delivery{
+            width: 100%;  
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            text-align: right;
+
+            @include lg{
+                flex-direction: row-reverse;
+                align-items: baseline;
+                justify-content: space-between;
+
+            }
+
+            h2{
+                margin: 8px 0 0 0;
+                padding: 0;
+            }
+
+            p{
+                margin: 0;
+                padding: 0;
+
+                span{
+                    color: var(--TealDark);
+                }
+            }
+        }
+    }
+
+
+    a{
+        position: fixed;
+        bottom: 16px;
+        right: 24px;
+        
+        height: 56px;
+        width: 56px;
+        border-radius: 100%;
+        
+        padding: 0 0 1px 0;
+        box-sizing: border-box;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: var(--TealDark);
+        color: var(--Ice);
+    }
+}
