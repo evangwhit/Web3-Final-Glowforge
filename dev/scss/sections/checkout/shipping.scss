@@ -225,10 +225,11 @@
     }
 
     .teal-button {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
 
         @include lg {
-            display: flex;
-            justify-content: center;
             position: absolute;
             bottom: 0px;
             left: 0px;

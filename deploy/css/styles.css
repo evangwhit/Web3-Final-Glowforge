@@ -1118,10 +1118,13 @@ button .medium, .button-medium {
   box-sizing: border-box;
   border: 1px solid var(--GreyLine);
 }
+#shipping .teal-button {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
 @media (min-width: 1024px) {
   #shipping .teal-button {
-    display: flex;
-    justify-content: center;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -1241,7 +1244,7 @@ button .medium, .button-medium {
   margin-top: 8px;
 }
 #product .product-info .purchase-box a {
-  margin-top: 16px;
+  display: inline-block;
 }
 #product .product-info .in-the-box h4 {
   margin: 48px 0 0 0;
