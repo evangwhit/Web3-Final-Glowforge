@@ -489,6 +489,7 @@ button {
 input[type=text],
 input[type=email],
 input[type=password],
+
 textarea {
   -webkit-appearance: none;
 }
@@ -689,7 +690,7 @@ button .medium, .button-medium {
   flex-direction: column;
   white-space: nowrap;
 }
-#footer div p, #footer div a {
+#footer div h2, #footer div a {
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
@@ -813,7 +814,7 @@ button .medium, .button-medium {
 }
 
 #checkout1-section-full {
-  height: 100vh;
+  min-height: 100vh;
 }
 #checkout1-section-full #checkout1-section {
   max-width: 1440px;
@@ -828,6 +829,7 @@ button .medium, .button-medium {
 @media (min-width: 1024px) {
   #checkout1-section-full #checkout1-section {
     display: flex;
+    min-height: 1000px;
     flex-direction: row;
     align-items: stretch;
     padding: 72px 155px 78px;

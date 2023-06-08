@@ -1,5 +1,5 @@
 #checkout1-section-full{
-height: 100vh;
+min-height: 100vh;
 
     #checkout1-section{
         max-width: 1440px;
@@ -14,6 +14,7 @@ height: 100vh;
 
         @include lg{
             display: flex;
+            min-height: 1000px;
             flex-direction: row;
             align-items: stretch;
             padding: 72px 155px 78px;
