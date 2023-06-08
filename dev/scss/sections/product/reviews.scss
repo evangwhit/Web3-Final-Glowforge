@@ -1,0 +1,129 @@
+#reviews{
+    padding: 0 16px;
+    margin-top: -260px;
+
+    .reviews-divider{
+        height: 2px;
+        background-color: var(--Ice);
+        width: 80%;   
+        margin: 0 auto 64px;
+    }
+
+    h1{
+        color: var(--White);
+    }
+
+    h1:first-of-type{
+        display: none;
+    }
+    
+    @include md{
+        padding: 0 32px;
+
+        h1:first-of-type{
+            display: block;
+        }
+
+        h1:last-of-type{
+            display: none;
+        }
+    }
+
+    @include lg{
+        padding: 0 155px;
+
+    }
+    
+    .highlight-container{
+        width: 100%;
+    
+
+        @include md{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+
+        @include lg{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .review-highlight{
+            display: none;
+            background-color: var(--Tan);
+            padding: 48px;
+            width: 100%;
+            box-sizing: border-box;
+
+
+            .large-copy{
+                height: 280px;
+                margin-bottom: 24px;
+                overflow: hidden;
+
+                // --webkit-mask-image: linear-gradient (O#000, Orgba(0,0,0,0.2));
+                // mask-image: linear-gradient (O#000, Orgba(0,0,0,0.2)) ;
+            }
+
+            .highlight-content{
+                display: flex;
+                width: 100%;
+
+                
+                .profile{
+                    
+                    img{
+                        border: 8px solid var(--Tan);
+                        border-radius: 100%;
+                        margin: -8px;
+                        margin-bottom: 16px;
+                        height: 70px;
+                        width: 70px;
+                    }
+
+                    img:last-of-type{
+                        margin-left: -32px;
+                        position: absolute;
+                    }
+
+
+                    p{
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .review-stars{
+                        margin-top: 8px;
+                    }
+
+                }
+
+                button{
+                    margin: 0 0 auto auto;
+                }
+            }
+        }
+
+        .review-highlight:first-of-type{
+            display: block;
+            
+        }
+
+        @include md{
+            .review-highlight{
+                display: block;
+            }
+            .review-highlight:last-of-type{
+                display: none;
+            }
+        }
+
+        @include lg{
+            .review-highlight:last-of-type{
+                display: block;
+            }
+        }
+
+    }
+
+}
