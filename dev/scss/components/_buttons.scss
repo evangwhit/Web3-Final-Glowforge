@@ -4,7 +4,6 @@
 a{
     padding: 10px 48px;
     white-space: nowrap;
-
 }
 
 button{
@@ -15,25 +14,22 @@ button{
 
 }
 
-.teal-button:link, .teal-button:visited{
+.teal-button, .teal-button:link, .teal-button:visited{
     color: var(--Ice);
     background-color: var(--TealDark);
+    padding: 10px 48px;
+    white-space: nowrap;
 
     &:hover, &:active{
         opacity: 50%;
     }
 }
 
-.teal-button{
-    color: var(--Ice);
-    background-color: var(--TealDark);
-    padding: 10px 48px;
-    white-space: nowrap;
-}
-
 .yellow-button:link, .yellow-button:visited{
     color: var(--Charcoal);
     background-color: var(--Yellow);
+    padding: 10px 48px;
+    white-space: nowrap;
 
     &:hover, &:active{
         opacity: 70%;
@@ -49,10 +45,12 @@ button{
     }
 }
 
-.outline-button:link, .outline-button:visited{
+.outline-button, .outline-button:link, .outline-button:visited{
     color: var(--Charcoal);
     background-color: transparent;
     border: 2px solid var(--TealDark);
+    padding: 10px 48px;
+    white-space: nowrap;
 
     &:hover, &:active{
         background-color: var(--TealLight);

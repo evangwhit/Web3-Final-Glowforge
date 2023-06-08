@@ -89,6 +89,32 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Assets\/more-products\/gf-basic.jpg" : {
+      "ft" : 16384,
+      "iS" : 18451,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/more-products\/gf-basic.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/Assets\/more-products\/gf-pro.jpg" : {
+      "ft" : 16384,
+      "iS" : 11647,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/more-products\/gf-pro.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/Assets\/product-img1.jpg" : {
       "ft" : 16384,
       "iS" : 281016,

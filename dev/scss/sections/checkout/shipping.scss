@@ -225,13 +225,14 @@
     }
 
     .teal-button {
-        margin-top: 32px;
-        width: 100%;
 
         @include lg {
+            display: flex;
+            justify-content: center;
             position: absolute;
-            margin-top: auto;
-            bottom: 0;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
         }
     }
 }
