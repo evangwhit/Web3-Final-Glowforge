@@ -2,7 +2,7 @@
     padding: 96px 16px 56px;
     box-sizing: border-box;
 
-    @include md{
+    @include md {
         height: 75vh;
         display: flex;
         flex-direction: horizontal;
@@ -29,7 +29,7 @@
         }
 
         .product-img1{
-            background-image: url("../../../../Assets/product-img1.jpg");
+            background-image: url("../img/product/product-img1.jpg");
             width: 100%;
             height: 350px;
 
@@ -56,17 +56,17 @@
             
             .product-img2{
                 grid-area: img2;
-                background-image: url("../../../../Assets/product-img2.jpg");
+                background-image: url("../img/product/product-img2.jpg");
             }
     
             .product-img3{
                 grid-area: img3;
-                background-image: url("../../../../Assets/product-img3.jpg");
+                background-image: url("../img/product/product-img3.jpg");
             }
     
             .product-img4{
                 grid-area: img4;
-                background-image: url("../../../../Assets/product-img4.jpg");
+                background-image: url("../img/product/product-img4.jpg");
                 background-size: 90%;
             }
         }   
