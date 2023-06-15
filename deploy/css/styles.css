@@ -489,7 +489,6 @@ button {
 input[type=text],
 input[type=email],
 input[type=password],
-
 textarea {
   -webkit-appearance: none;
 }
@@ -841,6 +840,32 @@ button .medium, .button-medium {
 
 #checkout2-section #shipping {
   display: inline-block;
+}
+
+#checkout3-section-full {
+  min-height: 100vh;
+}
+#checkout3-section-full #checkout3-section {
+  max-width: 1440px;
+  max-height: 1100px;
+  margin: auto;
+  height: 100vh;
+  box-sizing: border-box;
+}
+#checkout3-section-full #checkout3-section #receipt {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #checkout3-section-full #checkout3-section {
+    display: flex;
+    min-height: 1000px;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 72px 155px 78px;
+  }
+  #checkout3-section-full #checkout3-section #receipt {
+    display: inline-flex;
+  }
 }
 
 #receipt {
