@@ -9,6 +9,26 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/Assets\/applepay-logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/applepay-logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/Card-icons.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/Card-icons.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Assets\/Glowforge-logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -24,6 +44,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/Assets\/Logoimage.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/paypal-logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/paypal-logo.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,

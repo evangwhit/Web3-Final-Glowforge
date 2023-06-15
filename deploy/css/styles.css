@@ -884,6 +884,7 @@ button .medium, .button-medium {
     padding: 48px 64px 32px 64px;
     width: 50%;
     height: auto;
+    min-height: 824px;
     border: 1px solid var(--Black);
     box-sizing: border-box;
   }
@@ -1155,4 +1156,147 @@ button .medium, .button-medium {
     margin-top: auto;
     bottom: 0;
   }
+}
+
+#payment {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin-top: calc(var(--navoffset) + 8px);
+  min-height: 92vh;
+}
+@media (min-width: 1024px) {
+  #payment {
+    position: relative;
+    margin-top: var(--navoffset);
+    width: 50%;
+    height: auto;
+    min-height: 824px;
+    padding: 0;
+    margin-left: 90px;
+  }
+}
+#payment form {
+  padding: 0px;
+  border: 1px solid var(--Black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  /*--------------
+  Radio buttons
+  --------------*/
+}
+#payment form h2 {
+  margin-top: 8px;
+}
+#payment form .input-fields {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto auto;
+  column-gap: 24px;
+  row-gap: 16px;
+  border-top: 1px solid var(--GreyLine);
+  padding-top: 24px;
+  grid-template-areas: "name1 name1 name1 name1 name1 name1" "name2 name2 name2 name3 name3 name3" "name4 name4 name4 name4 name4 name4";
+}
+#payment form .input-fields .form-item1 {
+  grid-area: name1;
+}
+#payment form .input-fields .form-item2 {
+  grid-area: name2;
+}
+#payment form .input-fields .form-item3 {
+  grid-area: name3;
+}
+#payment form .input-fields .form-item4 {
+  grid-area: name4;
+}
+#payment form .input-fields input {
+  width: 100%;
+  height: 56px;
+  margin-top: 4px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  border: 1px solid var(--GreyLine);
+}
+#payment form .radio-button {
+  display: flex;
+  flex-direction: column;
+}
+#payment form .radio-button .credit-card-section {
+  display: grid;
+  padding: 44px 32px;
+  row-gap: 44px;
+  grid-template-areas: "label date" "inputs inputs";
+}
+#payment form .radio-button .credit-card-section label[for=Credit-card] {
+  grid-area: label;
+}
+#payment form .radio-button .credit-card-section #credit-card-info {
+  grid-area: date;
+  display: flex;
+  justify-self: end;
+}
+#payment form .radio-button .credit-card-section .input-fields {
+  grid-area: inputs;
+}
+#payment form .radio-button .other-payment-section {
+  padding: 44px 32px;
+  background-color: var(--Tan);
+  border-top: 1px solid var(--GreyLine);
+  display: grid;
+  grid-template-areas: "label date" "description description";
+}
+#payment form .radio-button .other-payment-section label[for=paypal] {
+  grid-area: label;
+}
+#payment form .radio-button .other-payment-section #paypal-logo {
+  grid-area: date;
+  display: flex;
+  justify-self: end;
+}
+#payment form .radio-button .other-payment-section p {
+  grid-area: description;
+  margin: 4px 0 0 18px;
+}
+#payment label {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+#payment label input {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  margin: 0 16px 0 0;
+  color: var(--Black);
+  width: 1.15em;
+  height: 1.15em;
+  border: 2px solid var(--Black);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+#payment label input::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--TealLight);
+}
+#payment label input:checked::before {
+  transform: scale(1);
+}
+#payment label input:checked {
+  border-color: var(--TealDark);
+}
+#payment .teal-button {
+  margin-top: auto;
+  width: 100%;
 }
