@@ -34,3 +34,31 @@ min-height: 100vh;
         display: inline-block;
     }
 }
+
+#checkout3-section-full{
+    min-height: 100vh;
+    
+        #checkout3-section{
+            max-width: 1440px;
+            max-height: 1100px;
+            margin: auto;
+            height: 100vh;
+            box-sizing: border-box;
+    
+            #receipt{
+                display: none;
+            }
+    
+            @include lg{
+                display: flex;
+                min-height: 1000px;
+                flex-direction: row;
+                align-items: stretch;
+                padding: 72px 155px 78px;
+                
+                #receipt{
+                    display: inline-flex;
+                }
+            }
+        }
+    }

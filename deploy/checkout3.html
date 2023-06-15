@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/afac2e2b57.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Glowforge Pro</title>
+</head>
+
+<body>
+
+    <!-- 
+        NAV BAR
+    -->
+    
+    
+    <nav id="nav">
+    <!-- Logo -->
+        <div id="nav-logo">
+            <img src="img/global/Glowforge-logo.svg" alt="Glowforge logo">
+        </div>
+    
+    <!-- Hamburger -->
+        <div id="burger-container">
+            <button id="burger-btn">
+                <i class="fa-solid fa-bars" style="color: var(--Charcoal);"></i>
+            </button>
+        </div>
+    
+    <!-- Nav buttons -->
+        <div id="main-menu">
+            <div class="nav-buttons">
+             <!-- Nav buttons -->
+                <div>
+                    <a href="#" class="text-button">Products</a>
+                    <a href="#" class="text-button">Community</a>
+                    <a href="#" class="text-button">About</a>
+                </div>
+    
+            <!-- CTA button -->
+                <aside>
+                    <a href="#" class="teal-button">Buy Glowforge</a>
+                </aside>
+            </div>
+            
+        </div>
+        
+    </nav>
+    <div id="checkout3-section-full">
+        <section id="checkout3-section">
+                <section id="receipt">
+                    <div class="receipt-header">
+                        <div class="receipt-img">
+                            <img src="../../../Assets/Receipt-glowforge.png" alt="Glowforge pro model thumbnail image">
+                        </div>
+                        <div class="receipt-head-text">
+                            <h2>Glowforge pro</h2>
+                            <p class="secondary-text">The new innovation in laser printing</p>
+                            <h3>$6,995.00</h3>
+                        </div>
+                    </div>
+                
+                    <div class="prices">
+                        <div>
+                            <p class="secondary-text">Add Pro Air Filter</p>
+                            <h3>$1,295.00</h3>
+                            <button>– Remove</button>
+                        </div>
+                
+                        <div>
+                            <p class="secondary-text">Add Warranty</p>
+                            <h3>$645.00</h3>
+                            <button>+ Add</button>
+                        </div>
+                    </div>
+                
+                    <div class="totals">
+                        <ul>
+                            <li>
+                                <p class="secondary-text">Glowforge Pro</p>
+                                <h4>$6,995.00</h4>
+                            </li>
+                
+                            <li>
+                                <p class="secondary-text">Air Filter</p>
+                                <h4>$1,295.00s</h4>
+                            </li>
+                        </ul>
+                        
+                        <div class="total-delivery">
+                            <h2>$8,290.00</h2>
+                            <p class="body-copy">Delivers to 19104 in <span>3 days</span></p>
+                        </div>
+                    </div>
+                
+                    <a href="#" class="next-button"> <i class="fa-solid fa-arrow-right fa-lg"> </i></a>
+                
+                
+                </section>
+                
+                <section id="payment">
+                                
+                                    <form action="/action_page.php">
+                                
+                                
+                                        <section class="radio-button">  
+                                            <div class="credit-card-section">
+                                
+                                
+                                                <!-- Radio button and card info -->
+                                                <label for="Credit-card" class="row1 h3">
+                                                    <input type="radio" id="standard" class="row1 body-copy" name="fav_language" value="standard">
+                                                    Credit card
+                                                </label>
+                                                <img src="../../../Assets/Card-icons.svg" alt="Icons for Visa, American Express, Discover, and Mastercard cards." id="credit-card-info" class="row1">
+                                                    
+                                
+                                
+                                
+                                                <!-- Inputs -->
+                                                <ul class="input-fields">
+                                                    <li class="form-item1">
+                                                        <label for="name" class="h4">Credit Card Number</label>
+                                                        <input type="text" id="name" name="Name">
+                                                    </li>
+                                            
+                                                    <li class="form-item2">
+                                                        <label for="address" class="h4">CVV</label>
+                                                        <input type="text" id="address" name="Address">
+                                                    </li>
+                                            
+                                                    <li class="form-item3">
+                                                        <label for="city" class="h4">Expiry Date</label>
+                                                        <input type="text" id="city" name="City" placeholder="MM/YY">
+                                                    </li>
+                                            
+                                                    <li class="form-item4">
+                                                        <label for="state" class="h4">Name on card</label>
+                                                        <input type="text" id="state" name="State">
+                                                    </li>
+                                                </ul>
+                                
+                                            </div> 
+                                            
+                                
+                                            <div class="other-payment-section">
+                                                <label for="paypal" class="h3">
+                                                    <input type="radio" id="paypal" name="fav_language" class="body-copy" value="Expedited">
+                                                    Paypal
+                                                </label>
+                                                <img src="../../../Assets/paypal-logo.svg" alt="Paypal logo" id="paypal-logo">
+                                                <p id="paypal-info">Sign in with Paypal and pay securely</p>
+                                
+                                            </div>
+                                
+                                            <div class="other-payment-section">
+                                                <label for="paypal" class="h3">
+                                                    <input type="radio" id="paypal" name="fav_language" class="body-copy" value="Expedited">
+                                                    Apple pay
+                                                </label>
+                                                <img src="../../../Assets/applepay-logo.svg" alt="Paypal logo" id="paypal-logo">
+                                                <p id="paypal-info">Use TouchID to sign in and pay</p>
+                                
+                                            </div>
+                                            
+                                            <!-- <p class="secondary-text">Get your Glowforge 3 days sooner!</p> -->
+                                        </section>
+                                
+                                    </form>
+                                  
+                                    <button class="teal-button">Complete purchase</button>
+                                  </section>
+                                           
+        </section>
+    </div>
+   
+    <!-- 
+        FOOTER
+    -->
+    
+    <section id="footer">
+        <div class="logo">
+            <img src="../Assets/Logoimage.svg" alt="">
+        </div>
+    
+        <div class="product">
+            <h2 class="body-copy">Product</h2>
+            <a href="#" class="secondary-text">Home</a>
+            <a href="#" class="secondary-text">Our products</a>
+            <a href="#" class="secondary-text">Educators</a>
+            <a href="#" class="secondary-text">Materials</a>
+        </div>
+    
+        <div class="company">
+            <h2 class="body-copy">Company</h2>
+            <a href="#" class="secondary-text">About us</a>
+            <a href="#" class="secondary-text">Community</a>
+            <a href="#" class="secondary-text">Careers</a>
+        </div>
+    
+        <div class="contact-us">
+            <h2 class="body-copy">Contact us</h2>
+            <a href="#" class="button-medium">hello@glowforge.com</a>
+        </div>
+    
+        <div class="socials">
+            <a href="#" class="secondary-text"> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="#" class="secondary-text"> <i class="fa-brands fa-instagram"></i> </a>
+            <a href="#" class="secondary-text"> <i class="fa-brands fa-twitter"></i> </a>
+            <p>Created with <span> <i class="fa-solid fa-heart"> </i></span> in Seattle</p>
+        </div>
+    
+    
+    </section>
+    <script src="js/scripts-min.js"></script>
+    
+</body>
+
+</html>
