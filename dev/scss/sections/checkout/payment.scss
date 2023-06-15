@@ -5,7 +5,7 @@
     flex-direction: column;
     padding: 16px;
     margin-top: calc(var(--navoffset) + 8px);
-    min-height: 92vh;
+    min-height: 900px;
 
     @include lg {
         position: relative;
@@ -188,6 +188,9 @@
     // Bottom button "complete purchase"    
     .teal-button {
         margin-top: auto;
-        width: 100%;
+        width: auto;
+
+        display: flex;
+        justify-content: center;
     }
 }
