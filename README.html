@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h1 id="web3finalglowforgepro">Web3 Final | Glowforge Pro</h1>
+
+<br>
+
+<h2 id="overview">Overview</h2>
+
+<p>The Glowforge Pro checkout flow is a custom site redesigned from <a href="https://shop.glowforge.com/collections/printers/products/glowforge-pro">glowforge.com</a>. The project took place over two terms, designed in Web Graphics 2 (VSCM 221) and coded in Web Graphics 3 (VSCM 222). The goal of the project was to fully develop the checkout flow with HTML and CSS, therefore some page elements like the reviews section are unresponsive to avoid the use of Javascript.</p>
+
+<p>Three pages are included, a product page, a checkout flow (which is broken up into two or three steps), and a thank you page. The “Buy now” button will start this flow in the live site.</p>
+
+<h3 id="organization">Organization</h3>
+
+<p>HTML files are stored under content. The folder structure is broken up into pages, and then .kit files within to represent sections. I used CodeKit to compile the sections into the checkout, index, and thankyou HTML files that then became the final 3 pages.</p>
+
+<p>The SCSS files are organized similarly, under <code>SCSS/sections</code> sections the folders are divided into pages, then sections. This is alongside several folders holding universal SCSS for things such as components and navigation. The SCSS is all compiled into one CSS file for the whole site.</p>
+
+<br>
+
+<h2 id="branches">Branches</h2>
+
+<p>Github branches are divided up by page, with one branch to work on each page. Other branches are created for navigation and testing specific features. This was so I could test ideas without having to commit the original branches as it they were still in progress. For info on specific branches, see below.</p>
+
+<h3 id="product-pagehttps:github.comevangwhitweb3-final-glowforgetreeproduct-page"><a href="https://github.com/evangwhit/Web3-Final-Glowforge/tree/Product-page">Product-page</a></h3>
+
+<p>The product page was the most straightforward process to develop. The largest challenges were using media queries to change the headline “How people use Glowforge” to “Reviews” for mobile, and to add the secondary product photos on larger devices. For the larger displays, I used background images and grid area templates to layout the 4 images to match the Figma file I had designed previously.</p>
+
+<h3 id="checkout-flowhttps:github.comevangwhitweb3-final-glowforgetreecheckout-flow"><a href="https://github.com/evangwhit/Web3-Final-Glowforge/tree/Checkout-Flow">Checkout-Flow</a></h3>
+
+<p>Checkout posed the largest problems to solve. The mobile flow I had designed included three separate pages for each card while the tablet and desktop displayed one card the entire time and navigated from the “second” to the third.</p>
+
+<p>In order for the navigation to work for both mobile and desktop, I created three separate stages.</p>
+
+<ol>
+<li>The first stage included cards one and two (<em>receipt</em> and <em>shipping</em>).</li>
+<li>Second only included stage two (*shipping).*</li>
+<li>The third included stages one and three (<em>receipt</em> and <em>payment</em>).</li>
+</ol>
+
+<p>This allowed me to customize the button destinations with media queries and have the mobile flow got through steps 1&#8211;3 while the desktop skipped step two entirely. I then hid the excess cards on mobile and the final product is a seamless checkout flow that takes maximum advantage of screen real estate for each device.</p>
+
+<h3 id="thank-youhttps:github.comevangwhitweb3-final-glowforgetreethank-you"><a href="https://github.com/evangwhit/Web3-Final-Glowforge/tree/Thank-you">Thank-you</a></h3>
+
+<p>The thank you page was also simple HTML and CSS layout. I used flexbox to layout the whole section, and then divided the order information into it’s own div at the bottom that then had display:grid applied which made adjustments between the mobile and desktop layouts a simple adjustment to the grid columns.</p>
+
+<h3 id="navhttps:github.comevangwhitweb3-final-glowforgetreenav"><a href="https://github.com/evangwhit/Web3-Final-Glowforge/tree/Nav">Nav</a></h3>
+
+<p>This was the branch used for the nav bar and footer, I separated these as they were applied universally and I wanted to separate changes here from changes to the individual pages.</p>
+
+<h3 id="nav-testinghttps:github.comevangwhitweb3-final-glowforgetreenav-testing"><a href="https://github.com/evangwhit/Web3-Final-Glowforge/tree/Nav-testing">Nav-testing</a></h3>
+
+<p>The Nav-testing branch was created after I had designed the navigation. It’s purpose was to adjust class names to align with the javascript provided by my professor for a responsive mobile menu. Without an understanding of exactly what the javascript was doing, this took several iterations of tweaking the class names and the HTML structure to make interaction work. Once I solved the problem, I went back to the Nav branch and manually applied my changes. This was the best process for me to avoid the cluttered code I generated when testing the interaction.</p>
+
+<h3 id="shipping-radio-testinghttps:github.comevangwhitweb3-final-glowforgetreeshipping-radio-testing"><a href="https://github.com/evangwhit/Web3-Final-Glowforge/tree/Shipping-Radio-Testing">Shipping-Radio-Testing</a></h3>
+
+<p>This branch was used to customize the radio buttons within the shipping form. The interaction I wanted between the two radio buttons meant I restructured the HTML multiple times as I tested my ability to apply css to the correct classes/tags. After the first iteration, I separated the branch so that I wouldn’t effect the working input fields I had in the form. This allowed me to fix the radio buttons without the fear of damaging the rest of the form.</p>
+
+<br>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>This project consisted of a wide variety of HTML and CSS techniques. I have listed the main components:</p>
+
+<ul>
+<li>HTML
+
+<ul>
+<li>Classes and IDs</li>
+<li>Unordered lists, divs, sections, forms, links, and images</li>
+<li>All typography, from H1 to p tags</li>
+</ul></li>
+<li>CSS
+
+<ul>
+<li>SCSS</li>
+<li>Background image</li>
+<li>Display: grid, flex, inline</li>
+<li>mixins</li>
+<li>media queries</li>
+<li>variables</li>
+</ul></li>
+</ul>
+
+<p>If there are any large gaps in my understanding please let me know! I am excited to discover more and have loved the process of problem solving so far.</p>
+
+</body>
+</html>
+
