@@ -5,7 +5,7 @@
 ## Overview
 The Glowforge Pro checkout flow is a custom site redesigned from [glowforge.com](https://shop.glowforge.com/collections/printers/products/glowforge-pro). The project took place over two terms, designed in Web Graphics 2 (VSCM 221) and coded in Web Graphics 3 (VSCM 222). The goal of the project was to fully develop the checkout flow with HTML and CSS, therefore some page elements like the reviews section are unresponsive to avoid the use of Javascript. 
 
-Three pages are included, a product page, a checkout flow (which is broken up into two or three steps), and a thank you page. The “Buy now” button will start this flow in the live site.
+Three pages are included, a product page, a checkout flow (which is broken up into [two or three steps](#Checkout-Flow)), and a thank you page. The “Buy now” button will start this flow in the live site.
 
 ### Organization
 
