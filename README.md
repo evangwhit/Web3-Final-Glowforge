@@ -11,7 +11,7 @@ Three pages are included, a product page, a checkout flow (which is broken up in
 
 HTML files are stored under content. The folder structure is broken up into pages, and then .kit files within to represent sections. I used CodeKit to compile the sections into the checkout, index, and thankyou HTML files that then became the final 3 pages. 
 
-The SCSS files are organized similarly, under `SCSS/sections` sections the folders are divided into pages, then sections. This is alongside several folders holding universal SCSS for things such as components and navigation. The SCSS is all compiled into one CSS file for the whole site.
+The SCSS files are organized similarly, under `SCSS/sections` the folders are divided into pages, then sections. This is alongside several folders holding universal SCSS for things such as components and navigation. The SCSS is all compiled into one CSS file for the whole site.
 
 <br>
 
